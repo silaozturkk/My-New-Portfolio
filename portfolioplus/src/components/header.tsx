@@ -1,16 +1,31 @@
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+
 const Header = () => {
     return (
-        <header className="px-4 flex flex-row justify-around bg-yellow-50">
-            <h1>Sıla Öztürk</h1>
-            <nav className="flex flex-row gap-4">
-                <ul><a href="/">Home</a></ul>
-                <ul><a href="/about">About Me</a></ul>
-                <ul><a href="/education">Education</a></ul>
-                <ul><a href="/experience">Experience</a></ul>
-                <ul><a href="/projects">Projects</a></ul>
-                <ul><a href="/contact">Contact</a></ul>
-            </nav>
+        <header className=" py-6 text-neutral-500 text-xl font-semibold flex flex-row justify-around shadow-4xl border-b-2 border-red-400">
             
+            <nav className="flex flex-row gap-4 text-lg">
+                <a href="/" className="relative px-2 hover:text-red-500 transition-colors duration-300 group">
+                    Home
+                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="/about" className="relative px-2 hover:text-red-500 transition-colors duration-300 group">
+                    About Me
+                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="/project" className="relative px-2 hover:text-red-500 transition-colors duration-300 group">
+                    Projects
+                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="/contact" className="relative px-2 hover:text-red-500 transition-colors duration-300 group">
+                    Contact Me
+                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
+                </a>
+            </nav>
+            <h1 className="text-2xl"><a href="/">Sıla Öztürk</a></h1>   
+            <FaGithub />
+            <FaLinkedin />
+
         </header>
     );
 }
