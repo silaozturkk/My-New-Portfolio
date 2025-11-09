@@ -1,15 +1,33 @@
-import GitHubSection from "@/components/GithubCalendar";
-import Image from "next/image";
+'use client'
+import DaysICode from "@/components/DaysICode";
 import { AiOutlineExport } from "react-icons/ai";
+import { Typewriter } from 'react-simple-typewriter'
 
 export default function Home() {
   
   return (
     <div>
-      <div className="flex md:flex-row flex-col justify-center 2xl:px-52 px-2 md:pl-20">
+      <div className="flex md:flex-row text-neutral-700 flex-col justify-center 2xl:px-52 px-2 md:pl-20">
         <div className="2xl:pt-40 md:pt-32 flex flex-col gap-4 text-">
-          <p className="text-5xl text-pink-500 font-semibold md:text-start text-center">Hi, I'm Sıla. </p>
-          <p className="text-4xl ">I'm a Computer Engineering Student.</p>
+          <p className="text-5xl  font-semibold md:text-start text-center">Hi, I'm Sıla. </p>
+          <p className="text-4xl font-bold text-start">
+            I am a{' '}
+            <span className="bg-linear-to-r from-pink-600 via-pink-300 to-pink-600 bg-clip-text text-transparent">
+            <Typewriter
+              words={[
+                'Computer Engineering Student',
+                'Future Software Engineer',
+                'Frontend Developer',
+              ]}
+              loop={true}
+              cursor
+              cursorStyle="|"
+              typeSpeed={80}
+              deleteSpeed={50}
+              delaySpeed={1500}
+            />
+            </span>
+          </p>
           <p className="text-2xl ">I am currently a 3rd-year Computer Engineering student. I specialize in Full Stack Web Development. I actively translate the theoretical knowledge I gain in school into practical applications by working on real-world projects. I am passionate about continuous learning and constantly improving my skills in this dynamic field.</p>
           <div className="flex gap-4 items-center md:justify-start justify-center md:pb-0 pb-6">
           <div className="flex flex-row items-center gap-2 text-xl p-2 bg-pink-400 text-white rounded-md shadow-md hover:bg-pink-500 ">
@@ -35,6 +53,7 @@ export default function Home() {
         >
         </img>        
       </div>
+      <DaysICode /> 
     </div>
   );
 }
