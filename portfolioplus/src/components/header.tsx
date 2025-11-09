@@ -34,7 +34,7 @@ const Header = () => {
 
     return (
         <header 
-            className={`2xl:py-14 mt-8 z-50 sticky top-0 md:py-8 py-4 pt-4 md:pt-8 text-white text-2xl font-semibold flex flex-row justify-around items-center
+            className={`2xl:mt-14 mt-8 z-50 sticky top-0 md:py-8 py-4 pt-4 md:pt-8 text-white text-2xl font-semibold flex flex-row justify-around items-center
                 ${scrolled ? "bg-orange-100/90 shadow-lg rounded-b-2xl border-b-2 border-pink-700 md:border-pink-400" : "bg-transparent"}
                 `}
             >

@@ -13,7 +13,6 @@ const DaysICode = () => {
       <h2 className="text-3xl font-bold mb-6 bg-linear-to-r from-pink-600 via-pink-600 to-black bg-clip-text text-transparent">
         Days I Code
       </h2>
-
       <div className="flex justify-center">
         <GitHubCalendar
           username="silaozturkk"

@@ -2,13 +2,16 @@
 import DaysICode from "@/components/DaysICode";
 import { AiOutlineExport } from "react-icons/ai";
 import { Typewriter } from 'react-simple-typewriter'
+import FadeIn from "@/components/FadeIn";
+
 
 export default function Home() {
   
   return (
     <div>
+      <FadeIn>
       <div className="flex lg:flex-row text-neutral-700 flex-col justify-center items-center 2xl:px-52 px-2 lg:pl-20">
-        <div className="2xl:pt-40  flex flex-col gap-4 text-">
+        <div className="flex flex-col gap-4 text-">
           <p className="text-5xl  font-semibold lg:text-start text-center">Hi, I'm Sıla. </p>
           <p className="text-4xl font-bold text-center lg:text-start">
             I am a{' '}
@@ -53,7 +56,8 @@ export default function Home() {
         >
         </img>        
       </div>
-      <DaysICode /> 
+      <DaysICode />
+      </FadeIn> 
     </div>
   );
 }
