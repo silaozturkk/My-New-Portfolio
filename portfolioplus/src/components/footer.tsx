@@ -1,7 +1,7 @@
 const Footer = () => {
     const currentYear = new Date().getFullYear();
     return (
-        <footer className="flex flex-row text-[12px] md:text-base justify-between md:px-44 px-6 py-4 text-neutral-600 text-center border-t-2 border-pink-400 bottom-0 w-full">
+        <footer className="py-4 md:py-6 flex text-neutral-700  justify-around items-center w-full border-t border-t-pink-500 bottom-0 text-[12px] md:text-base ">
             <p>{currentYear} © All rights reserved.</p>
             <p className="flex items-center">
                 Build with <span className="px-1  text-pink-500">&#9829;</span> by Sıla Öztürk
