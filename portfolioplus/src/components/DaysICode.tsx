@@ -9,7 +9,7 @@ const DaysICode = () => {
   }
 
   return (
-    <div className="text-center my-4 md:my-8 lg:my-16 px-2 lg:px-0">
+    <div className="text-center my-8 md:my-16 px-2 lg:px-0">
       <h2 className="text-3xl font-bold mb-4 bg-linear-to-r from-pink-600 via-pink-600 to-black bg-clip-text text-transparent">
         Days I Code
       </h2>

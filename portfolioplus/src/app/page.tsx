@@ -9,7 +9,6 @@ export default function Home() {
   
   return (
     <div>
-
       <div className="flex lg:flex-row text-neutral-700 flex-col justify-center items-center 2xl:px-52 px-2 lg:pl-20">
         <div className="flex flex-col gap-4">
           <p className="md:text-5xl text-3xl font-semibold lg:text-start text-center">Hi, I'm Sıla. </p>

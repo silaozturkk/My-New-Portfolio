@@ -90,7 +90,7 @@ const Header = () => {
             <nav className={`md:hidden fixed top-0 right-0 w-full max-w-xs h-full  bg-orange-100 shadow-2xl  flex flex-col items-center gap-8 pt-40 text-xl transition-transform duration-500 ${
                 isMenuOpen ? "translate-x-0 " : "translate-x-full"}`
             }>
-                
+
                 <Link 
                     href="/" 
                     className={`relative hover:text-pink-400 transition-colors duration-300 group 
