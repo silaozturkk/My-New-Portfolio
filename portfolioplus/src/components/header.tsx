@@ -38,7 +38,7 @@ const Header = () => {
                 ${scrolled ? "bg-orange-100/90 shadow-lg rounded-b-2xl border-b-2 border-pink-700 md:border-pink-400" : "bg-transparent"}
                 `}
             >
-            <h1 className="font-semibold lg:text-3xl bg-linear-to-r from-pink-800 via-pink-600 to-pink-900 bg-clip-text text-transparent"><a href="/">Sıla Öztürk</a></h1>  
+            <h1 className="font-semibold lg:text-3xl bg-linear-to-r from-pink-800 via-pink-600 to-pink-900 bg-clip-text text-transparent"><Link href="/">Sıla Öztürk</Link></h1>  
             <button 
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
                 className="md:hidden text-pink-700 z-20"

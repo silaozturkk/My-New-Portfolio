@@ -3,13 +3,14 @@ import { FaCss3Alt, FaHtml5, FaJava, FaPython, FaReact } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
 
+
 const AboutPage = () => {
     return (
         <div className="items-center justify-center pb-6 px-6 lg:px-0">
             <h2 className="text-5xl 2xl:text-6xl text-center mt-10 font-bold 
             "><span className="bg-linear-to-r from-pink-300 via-pink-400 to-pink-600 bg-clip-text text-transparent">About</span> Me <span className="text-pink-500"></span></h2>
             <div className="md:flex items-center justify-center gap-10 lg:px-36 2xl:px-60">
-                <img src="aboutme1.png" className="w-40 md:w-60 pt-10 mx-auto md:mx-0" alt="Avatar" />
+                <img src="aboutme1.png" alt="About me avatar" className="w-40 md:w-60 pt-10 mx-auto md:mx-0"  />
                 <p className="text-lg text-center 2xl:pr-40 pt-3">A problem solver who loves turning ideas into digital experiences. I enjoy learning new technologies and creating solutions that make a real impact. Always eager to grow, I approach every challenge as an opportunity to innovate..</p>      
             </div>
             <div className="items-center justify-center py-20">
@@ -27,7 +28,7 @@ const AboutPage = () => {
             </div>
             <div className="lg:px-32 lg:flex items-center gap-20">
                 <h2 className="flex text-center justify-center lg:hidden text-5xl mt-10 font-bold text-neutral-800"> Education</h2>
-                <img src="kitap.png" className="md:size-120 mx-auto lg:mx-0"/>
+                <img src="kitap.png" alt="Kitap avatar" className="md:size-120 mx-auto lg:mx-0"/>
                 <div>
                     <h2 className="hidden lg:flex text-5xl mt-10 py-4 font-bold text-neutral-800"> Education</h2>
                     <div className="flex flex-col">
@@ -53,9 +54,12 @@ const AboutPage = () => {
                         <p>Gained hands-on experience in modern web development processes and project implementation.</p>
                     </div>
                 </div>
-                <img src="bilgisayar.png" className="md:size-120 mx-auto lg:mx-0"/>
+                <img 
+                    src="bilgisayar.png" 
+                    alt="Bilgisayar avatar" 
+                    className="md:size-120 mx-auto lg:mx-0"
+                />
             </div>
-            
         </div>
     );
 }

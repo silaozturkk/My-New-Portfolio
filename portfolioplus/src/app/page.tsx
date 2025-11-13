@@ -2,7 +2,6 @@
 import DaysICode from "@/components/DaysICode";
 import { AiOutlineExport } from "react-icons/ai";
 import { Typewriter } from 'react-simple-typewriter'
-import FadeIn from "@/components/FadeIn";
 
 
 export default function Home() {
@@ -11,7 +10,7 @@ export default function Home() {
     <div>
       <div className="flex lg:flex-row text-neutral-700 flex-col justify-center items-center 2xl:px-52 px-2 lg:pl-20">
         <div className="flex flex-col gap-4">
-          <p className="md:text-5xl text-3xl font-semibold lg:text-start text-center">Hi, I'm Sıla. </p>
+          <p className="md:text-5xl text-3xl font-semibold lg:text-start text-center">Hi, I&apos;m Sıla. </p>
           <p className="md:text-4xl text-2xl font-bold text-center lg:text-start">
             I am a{' '}
             <span className="bg-linear-to-r from-pink-600 via-pink-300 to-pink-600 bg-clip-text text-transparent">

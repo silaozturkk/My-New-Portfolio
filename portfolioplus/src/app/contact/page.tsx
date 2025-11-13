@@ -1,4 +1,3 @@
-import FadeIn from "@/components/FadeIn";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const ContactPage = () => {
@@ -58,7 +57,6 @@ const ContactPage = () => {
                 </div>
             </div>
         </div>
- 
     );
 }
 export default ContactPage;
