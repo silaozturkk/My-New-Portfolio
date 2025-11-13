@@ -3,9 +3,9 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const ContactPage = () => {
     return (
-        <FadeIn>
+ 
         <div className="pb-6 md:pb-20 text-neutral-800">
-            <h2 className="text-5xl text-center mt-10 font-bold "><span className="bg-linear-to-r from-pink-300 via-pink-400 to-pink-600 bg-clip-text text-transparent">Talk To</span> Me <span className="text-pink-500">!</span></h2>
+            <h2 className="text-5xl 2xl:text-6xl text-center mt-10 font-bold "><span className="bg-linear-to-r from-pink-300 via-pink-400 to-pink-600 bg-clip-text text-transparent">Talk To</span> Me <span className="text-pink-500">!</span></h2>
             <div className="flex flex-col lg:flex-row mt-10 lg:px-30 gap-10 items-center justify-center">  
                 <div className="w-full px-4 lg:w-1/2 flex flex-col items-center">
                     <img src="avatar2.png" className="w-60 pb-6" />
@@ -58,7 +58,7 @@ const ContactPage = () => {
                 </div>
             </div>
         </div>
-        </FadeIn>
+ 
     );
 }
 export default ContactPage;
