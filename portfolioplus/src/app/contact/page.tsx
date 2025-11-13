@@ -37,19 +37,19 @@ const ContactPage = () => {
                         <h2 className="lg:hidden text-center md:text-start text-3xl font-semibold bg-linear-to-r from-pink-600 via-pink-300 to-pink-400 bg-clip-text text-transparent ">Say Hello <span className="text-yellow-300">💛</span></h2>
                         <div className="flex flex-col">
                             <label>Name</label>
-                            <input type="text" name="name" required className="bg-white rounded-md shadow-2xl border-2 border-white hover:border-pink-300 w-full" />
+                            <input type="text" name="name" required className="bg-white rounded-md shadow-2xl border-2 border-white hover:border-pink-300 w-full px-1" />
                         </div> 
                         <div className="flex flex-col">
                             <label>Email</label>
-                            <input type="email" name="email" required className="bg-white rounded-md shadow-2xl border-2 border-white hover:border-pink-300 w-full" />
+                            <input type="email" name="email" required className="bg-white rounded-md shadow-2xl border-2 border-white hover:border-pink-300 w-full px-1" />
                         </div>
                         <div className="flex flex-col">
                             <label>Subject</label>
-                            <input type="subject" name="subject" required className="bg-white rounded-md shadow-2xl border-2 border-white hover:border-pink-300 w-full" />
+                            <input type="subject" name="subject" required className="bg-white rounded-md shadow-2xl border-2 border-white hover:border-pink-300 w-full px-1" />
                         </div>
                         <div className="flex flex-col">
                             <label>Message</label>
-                            <textarea name="message" rows={5} required className="bg-white rounded-md shadow-2xl border-2 border-white hover:border-pink-300 w-full"></textarea>
+                            <textarea name="message" rows={5} required className="bg-white rounded-md shadow-2xl border-2 border-white hover:border-pink-300 w-full px-1"></textarea>
                         </div>
                         <button className="bg-pink-400 py-2 text-white rounded-md   hover:bg-pink-500 ">
                             Send Message
