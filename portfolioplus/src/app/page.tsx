@@ -2,6 +2,7 @@
 import DaysICode from "@/components/DaysICode";
 import { AiOutlineExport } from "react-icons/ai";
 import { Typewriter } from 'react-simple-typewriter'
+import Image from "next/image";
 
 
 export default function Home() {
@@ -47,12 +48,14 @@ export default function Home() {
           </a>
           </div>
         </div>
-        <img
-          src="avatar-2.png"
-          alt="Avatar"
+        <Image
+          src="/avatar-2.png"
+          alt="Avatar illustration"
+          width={320}
+          height={320}
           className="2xl:size-200 lg:size-150 md:size-120 order-first lg:order-last"
-        >
-        </img>        
+          priority
+        />        
       </div>
       <DaysICode />
 

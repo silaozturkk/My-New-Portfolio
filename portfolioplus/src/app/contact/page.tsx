@@ -1,4 +1,5 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import Image from "next/image";
 
 const ContactPage = () => {
     return (
@@ -7,7 +8,14 @@ const ContactPage = () => {
             <h2 className="text-5xl 2xl:text-6xl text-center mt-10 font-bold "><span className="bg-linear-to-r from-pink-300 via-pink-400 to-pink-600 bg-clip-text text-transparent">Talk To</span> Me <span className="text-pink-500">!</span></h2>
             <div className="flex flex-col lg:flex-row mt-10 lg:px-30 gap-10 items-center justify-center">  
                 <div className="w-full px-4 lg:w-1/2 flex flex-col items-center">
-                    <img src="avatar2.png" className="w-60 pb-6" />
+                    <Image
+                        src="/avatar2.png"
+                        alt="Contact avatar illustration"
+                        width={240}
+                        height={240}
+                        className="w-60 pb-6"
+                        priority
+                    />
                     
                     <p className="text-center text-lg">
                         I’m always open to new opportunities, collaborations, or just a friendly hello. Whether you have a question, want to discuss a project, or share some feedback, feel free to reach out. You can contact me via email, or simply fill out the form below and I’ll get back to you as soon as possible.
