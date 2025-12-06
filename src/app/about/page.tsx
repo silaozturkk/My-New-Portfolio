@@ -7,7 +7,7 @@ import Image from "next/image";
 
 const AboutPage = () => {
     return (
-        <div className="items-center justify-center pb-6 px-6 lg:px-0">
+        <div className="items-center justify-center pb-6 px-2 lg:px-0">
             <h2 className="text-5xl 2xl:text-6xl text-center mt-10 font-bold 
             "><span className="bg-linear-to-r from-pink-300 via-pink-400 to-pink-600 bg-clip-text text-transparent">About</span> Me <span className="text-pink-500"></span></h2>
             <div className="md:flex items-center justify-center gap-10 lg:px-36 2xl:px-60">

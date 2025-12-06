@@ -39,7 +39,7 @@ const ContactPage = () => {
                         </a>
                     </div>
                 </div>
-                <div className="w-full px-4 lg:w-1/2">
+                <div className="w-full px-2 lg:w-1/2">
                     <form action="https://formsubmit.co/ozturksila100@gmail.com" method="POST"  className="flex flex-col gap-4 ">
                         <h2 className="lg:hidden text-center md:text-start text-3xl font-semibold bg-linear-to-r from-pink-600 via-pink-300 to-pink-400 bg-clip-text text-transparent ">Say Hello <span className="text-yellow-300">💛</span></h2>
                         <div className="flex flex-col">

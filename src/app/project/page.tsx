@@ -4,7 +4,7 @@ import Image from "next/image";
 const ProjectPage = () => {
     return (
 
-        <div className="px-4 lg:px-10 2xl:px-28 md:pb-4 lg:pb-8">
+        <div className="px-2 lg:px-10 2xl:px-28 md:pb-4 lg:pb-8">
             <h2 className="text-5xl 2xl:text-6xl text-center mt-10 font-bold text-neutral-800 "><span className="text-pink-400">My</span> Projects</h2>
             <p className="text-center pt-4 text-lg text-neutral-800">
                 A collection of projects that reflect my focus on clean design, efficient development, and meaningful digital experiences.     
@@ -12,7 +12,7 @@ const ProjectPage = () => {
             <p className="hidden md:grid text-center text-lg text-neutral-800">
                 Each one represents a step forward in combining creativity with functionality.
             </p>
-            <div className="w-full grid md:grid-cols-2 lg:grid-cols-4 md:px-6 lg:px-10 gap-6 md:gap-10 items-center justify-center py-6 md:py-10 text-md text-neutral-800">
+            <div className="w-full grid md:grid-cols-2 lg:grid-cols-4 md:2 lg:px-10 gap-6 md:gap-10 items-center justify-center py-6 md:py-10 text-md text-neutral-800">
                 <section className="bg-white text-center justify-center items-center shadow-2xs hover:shadow-2xl rounded-2xl transform hover:scale-104 transition-transform duration-500">
                     <Image
                         src="/biletSatisSistemi.png"
