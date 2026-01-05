@@ -3,6 +3,8 @@ import { useState, useEffect } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
+import LanguageToggle from "./loungageTogggle";
+import DarkMode from "./darkMode";
 
 const Header = () => {
 
@@ -47,7 +49,7 @@ const Header = () => {
             </button> 
             
             
-            <nav className="hidden md:flex flex-row gap-5 lg:gap-10">
+            <nav className="hidden md:flex flex-row gap-5 lg:gap-10 justify-center items-center">
                 <Link 
                     href="/" 
                     className={`relative hover:text-pink-400 transition-colors duration-300 group 
@@ -84,9 +86,14 @@ const Header = () => {
                 >
                     Contact Me
                     <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-pink-400 transition-all duration-300 group-hover:w-full"></span>
-                </Link>
-                
+                </Link>       
             </nav>
+            <div className="hidden md:flex gap-4">
+                    <LanguageToggle />
+                    <DarkMode /> 
+            </div>  
+            
+            {/* mobile */}
             <nav className={`md:hidden fixed top-0 right-0 w-full max-w-xs h-full  bg-orange-100 shadow-2xl  flex flex-col items-center gap-8 pt-40 text-xl transition-transform duration-500 ${
                 isMenuOpen ? "translate-x-0 " : "translate-x-full"}`
             }>
@@ -133,6 +140,8 @@ const Header = () => {
                     Contact Me
                     <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-pink-400 transition-all duration-300 group-hover:w-full"></span>
                 </Link>
+                <LanguageToggle />
+                <DarkMode />  
                 
             </nav>
         </header>
