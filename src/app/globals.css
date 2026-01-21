@@ -6,6 +6,28 @@ body {
   /* Tailwind'in varsayılan fontunu geçersiz kılar */
   font-family: 'Montserrat', sans-serif !important; 
 }
+
+/* Dark mode için arka plan yönetimi */
+:root {
+  --bg-image: url("/bg-4.jpeg");
+}
+
+html.dark {
+  --bg-image: url("/darkmode.jpg");
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: var(--bg-image);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+  transition: opacity 0.8s ease-in-out;
+}
+
 .rotating-circle-text {
   animation: spin 10s linear infinite;
   transform-origin: center;

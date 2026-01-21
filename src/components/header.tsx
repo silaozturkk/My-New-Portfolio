@@ -73,7 +73,7 @@ const Header = () => {
             </nav>
             <div className="hidden md:flex gap-4">
                     <LanguageToggle />
-                    <DarkMode /> 
+                    {/* <DarkMode />  */}
             </div>  
             
             {/* mobile */}
@@ -98,7 +98,7 @@ const Header = () => {
                     );
                 })}
                 <LanguageToggle />
-                <DarkMode />  
+                {/* <DarkMode />   */}
                 
             </nav>
         </header>

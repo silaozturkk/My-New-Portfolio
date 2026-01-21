@@ -28,9 +28,9 @@ const Footer = () => {
                             href={link.url}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-pink-500 hover:text-pink-700 transition-colors"
+                            className="text-black hover:text-white transition-colors"
                         >
-                            <Icon aria-label={link.name} size={18} />
+                            <Icon aria-label={link.name} size={24} />
                         </a>
                     );
                 })}
