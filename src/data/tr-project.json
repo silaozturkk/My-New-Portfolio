@@ -1,0 +1,56 @@
+{
+    "title": "Projelerim",
+    "description": "Temiz tasarım, verimli geliştirme ve anlamlı dijital deneyimlere odaklandığımı yansıtan bir proje koleksiyonu. Her biri yaratıcılığı işlevsellikle birleştirmede bir adım ileriye gidiyor.",
+    "buttonText": "Detayları Gör",
+    "backToProjects": "Projelere Dön",
+    "projectNotFound": "Proje Bulunamadı",
+    "aboutProject": "Bu Proje Hakkında",
+    "technologiesUsed": "Kullanılan Teknolojiler",
+    "projectLinks": "Proje Linkleri",
+    "viewSourceCode": "Kaynak Kodunu Görüntüle",
+    "viewLiveDemo": "Canlı Demoyu Görüntüle",
+    "projects": [
+      {
+        "id": 1,
+        "title": "Bilet Satış Sistemi",
+        "image": "/biletSatisSistemi.png",
+        "description": "Kullanıcıların tiyatro gösterilerini görüntülemesine, koltuk seçmesine ve bilet satın almasına olanak tanıyan bir masaüstü Java uygulaması. Sistem, koltuk takibi, bilet rezervasyonu ve kullanıcı yönetimi gibi özellikler içerir. Sorunsuz ve verimli bir bilet satın alma deneyimi sunan kullanıcı dostu bir arayüz sunar.",
+        "technologies": ["Java", "Masaüstü Uygulaması"],
+        "github": "https://github.com/silaozturkk/Tiyatro-Bilet-Sat-Sistemi",
+        "live": "",
+        "featured": true
+      },
+      {
+        "id": 2,
+        "title": "Portfolyom",
+        "image": "/my-portfolio.png",
+        "description": "Next.js ve Tailwind CSS ile oluşturulmuş modern, duyarlı bir portfolyo web sitesi. Proje, temiz ve kullanıcı dostu bir tasarım aracılığıyla kişisel projeleri, yetenekleri ve iletişim bilgilerini sergiler. Profesyonel bir dijital kimlik oluşturmak için performans, sadelik ve mobil duyarlılığa odaklanır.",
+        "technologies": ["Next.js", "React", "Tailwind CSS", "TypeScript"],
+        "github": "https://github.com/silaozturkk/My-New-Portfolio",
+        "live": "https://silaozturk.me",
+        "featured": true
+      },
+      {
+        "id": 3,
+        "title": "Google Docs Klonu",
+        "image": "/Google Docs Clone.png",
+        "description": "Next.js, Tailwind CSS ve Convex veritabanı ile oluşturulmuş gerçek zamanlı bir belge düzenleme uygulaması. Kullanıcılar giriş yaparak belgelerini oluşturabilir, düzenleyebilir ve güvenli bir şekilde bulutta saklayabilir. Modern tasarımı ve hızlı performansı ile Google Docs'a benzer işbirlikçi bir deneyim sunar.",
+        "technologies": ["Next.js", "React", "Tailwind CSS", "Convex", "TypeScript"],
+        "github": "https://github.com/silaozturkk/google-docs-clone",
+        "live": "https://google-docs-clone-delta-puce.vercel.app",
+        "featured": true
+      },
+      {
+        "id": 4,
+        "title": "Ders ve Sınav Programı Planlama Sistemi",
+        "image": "/derslikTakipSistemi.png",
+        "description": "Node.js, React ve Tailwind CSS ile oluşturulmuş modern bir web uygulaması. Kullanıcılar ders ve sınav programlarını kolayca planlayabilir ve yönetebilir. Sistem çakışmaları tespit eder ve kullanıcı dostu arayüzü ile programlama sürecini verimli bir şekilde kolaylaştırır.",
+        "technologies": ["Node.js", "React", "Tailwind CSS", "JavaScript"],
+        "github": "",
+        "live": "",
+        "featured": true
+      }
+    ]
+  }
+  
+  

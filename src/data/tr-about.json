@@ -1,0 +1,71 @@
+{
+    "title": "Hakkımda",
+    "bio": {
+      "1":"Fikirleri dijital deneyimlere dönüştürmeyi seven, analitik düşünen bir problem çözücüyüm. Yazılım geliştirme sürecinde yalnızca çalışan çözümler üretmeyi değil, aynı zamanda kullanıcıya değer katan, sürdürülebilir ve etkili deneyimler tasarlamayı önemsiyorum.", 
+      "2": "Yeni teknolojiler öğrenmek, kendimi sürekli geliştirmek ve güncel kalmak benim için bir motivasyon kaynağı. Karşılaştığım her zorluğu, daha iyi düşünmek, üretmek ve yenilik yapmak için bir fırsat olarak görüyorum. Gerçek dünyada karşılığı olan, somut bir etki yaratan projeler geliştirmekten keyif alıyor; öğrenmeye ve büyümeye her zaman istekli bir yaklaşımla ilerliyorum."
+    },
+    "sections": {
+      "skills": {
+        "title": "Yetenekler ve Teknolojiler",
+        "items": [
+          {
+            "name": "Java",
+            "percentage": 85
+          },
+          {
+            "name": "JavaScript",
+            "percentage": 90
+          },
+          {
+            "name": "HTML",
+            "percentage": 95
+          },
+          {
+            "name": "CSS",
+            "percentage": 85
+          },
+          {
+            "name": "React",
+            "percentage": 90
+          },
+          {
+            "name": "Next.js",
+            "percentage": 80
+          },
+          {
+            "name": "Tailwind CSS",
+            "percentage": 100
+          },
+          {
+            "name": "Python",
+            "percentage": 75
+          }
+        ]
+      },
+      "education": {
+        "title": "Eğitim",
+        "items": [
+          {
+            "degree": "Bilgisayar Mühendisliği",
+            "university": "İstanbul Rumeli Üniversitesi",
+            "period": "2023-2027",
+            "description": "İstanbul Rumeli Üniversitesi'nde 3. sınıf Bilgisayar Mühendisliği öğrencisiyim ve not ortalamam 3.62/4.00. Eğitimim süresince Nesne Yönelimli Programlama, Veri Yapıları, Bilgisayar Mimarisi, Görsel Programlama ve Sayısal Analiz gibi dersleri tamamladım. Java, JavaScript, React ve Next.js kullanarak kişisel ve akademik projeler geliştiriyorum. Özellikle yazılım geliştirme, algoritmalar ve veri analizi ile ilgileniyorum ve bu alanlarda kendimi sürekli geliştirmek için çalışıyorum."
+          }
+        ]
+      },
+      "experience": {
+        "title": "Deneyim",
+        "items": [
+          {
+            "position": "Yazılım Geliştirme Stajyeri",
+            "company": "Beylikdüzü Belediyesi",
+            "period": "Haziran 2025 – Temmuz 2025",
+            "department":"Bilgi Teknolojileri Müdürlüğü",
+            "description": "Staj süresince JavaScript, React ve Next.js dahil web geliştirme teknolojilerini öğrendim. Projelerimi ve yeteneklerimi sergilemek için React, Next.js ve Tailwind CSS kullanarak kişisel bir portfolyo web sitesi geliştirdim. Kullanıcıların gönderileri görüntüleyebileceği ve ekleyebileceği basit bir blog uygulaması oluşturdum, bileşen tabanlı mimari ve temel durum yönetimi uyguladım. Modern web geliştirme süreçleri ve proje uygulamasında pratik deneyim kazandım."
+          }
+        ]
+      }
+    }
+  }
+  
+  

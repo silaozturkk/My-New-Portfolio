@@ -1,0 +1,41 @@
+{
+    "title": "Talk To Me  !",
+    "description": "I'm always open to new opportunities, collaborations, or just a friendly hello. Whether you have a question, want to discuss a project, or share some feedback, feel free to reach out. You can contact me via email, or simply fill out the form below and I'll get back to you as soon as possible.",
+    "form": {
+      "title": "Say Hello 💛",
+      "fields": [
+        {
+          "name": "name",
+          "label": "Name",
+          "type": "text",
+          "placeholder": "Your Name",
+          "required": true
+        },
+        {
+          "name": "email",
+          "label": "Email",
+          "type": "email",
+          "placeholder": "your.email@example.com",
+          "required": true
+        },
+        {
+          "name": "subject",
+          "label": "Subject",
+          "type": "text",
+          "placeholder": "Subject",
+          "required": true
+        },
+        {
+          "name": "message",
+          "label": "Message",
+          "type": "textarea",
+          "placeholder": "Your Message",
+          "required": true
+        }
+      ],
+      "submitButton": "Send Message"
+    },
+    "email": "silaozturk1@icloud.com"
+  }
+  
+  

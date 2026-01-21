@@ -1,0 +1,41 @@
+{
+    "title": "Benimle Konuşun  !",
+    "description": "Yeni fırsatlara, işbirliklerine veya sadece dostane bir merhabaya her zaman açığım. Bir sorunuz varsa, bir proje hakkında konuşmak istiyorsanız veya geri bildirim paylaşmak istiyorsanız, lütfen çekinmeyin. E-posta yoluyla benimle iletişime geçebilir veya aşağıdaki formu doldurarak en kısa sürede size geri döneceğim.",
+    "form": {
+      "title": "Merhaba De 💛",
+      "fields": [
+        {
+          "name": "name",
+          "label": "Ad",
+          "type": "text",
+          "placeholder": "Adınız",
+          "required": true
+        },
+        {
+          "name": "email",
+          "label": "E-posta",
+          "type": "email",
+          "placeholder": "your.email@example.com",
+          "required": true
+        },
+        {
+          "name": "subject",
+          "label": "Konu",
+          "type": "text",
+          "placeholder": "Konu",
+          "required": true
+        },
+        {
+          "name": "message",
+          "label": "Mesaj",
+          "type": "textarea",
+          "placeholder": "Mesajınız",
+          "required": true
+        }
+      ],
+      "submitButton": "Mesaj Gönder"
+    },
+    "email": "silaozturk1@icloud.com"
+  }
+  
+  

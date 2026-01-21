@@ -1,16 +1,19 @@
-"use client"
+'use client';
 import { useState, useEffect } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import LanguageToggle from "./loungageTogggle";
 import DarkMode from "./darkMode";
+import { useLanguage } from "@/context/LanguageContext";
 
 const Header = () => {
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const pathname = usePathname();
     const [scrolled, setScrolled] = useState(false);
+    const { t } = useLanguage();
+    const links = t.navbar.links ?? [];
 
     useEffect(() => {
         
@@ -40,7 +43,9 @@ const Header = () => {
                 ${scrolled ? "bg-orange-100/90 shadow-lg rounded-b-2xl border-b-2 border-pink-700 md:border-pink-400" : "bg-transparent"}
                 `}
             >
-            <h1 className="font-semibold lg:text-3xl bg-linear-to-r from-pink-800 via-pink-600 to-pink-900 bg-clip-text text-transparent"><Link href="/">Sıla Öztürk</Link></h1>  
+            <h1 className="font-semibold lg:text-3xl bg-linear-to-r from-pink-800 via-pink-600 to-pink-900 bg-clip-text text-transparent">
+                <Link href="/">{t.navbar.logo}</Link>
+            </h1>  
             <button 
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
                 className="md:hidden text-pink-700 z-20"
@@ -50,43 +55,21 @@ const Header = () => {
             
             
             <nav className="hidden md:flex flex-row gap-5 lg:gap-10 justify-center items-center">
-                <Link 
-                    href="/" 
-                    className={`relative hover:text-pink-400 transition-colors duration-300 group 
-                        ${pathname==="/" ? "text-pink-400" : "text-white"}
-                    `}
-                >
-                    Home
-                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-pink-400 transition-all duration-300 group-hover:w-full"></span>
-                </Link>
-                <Link 
-                    href="/about"
-                    className={`relative hover:text-pink-400 transition-colors duration-300 group 
-                        ${pathname==="/about" ? "text-pink-400" : "text-white"}
-                    `}
-                >
-                    About Me
-                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-pink-400 transition-all duration-300 group-hover:w-full"></span>
-                </Link>
-                <Link 
-                    href="/project" 
-                    className={`relative hover:text-pink-400 transition-colors duration-300 group 
-                        ${pathname==="/project" ? "text-pink-400" : "text-white"}
-                    `}
-                >
-                    Projects
-                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-pink-400 transition-all duration-300 group-hover:w-full"></span>
-                </Link>
-                
-                <Link 
-                    href="/contact" 
-                    className={`relative hover:text-pink-400 transition-colors duration-300 group 
-                        ${pathname==="/contact" ? "text-pink-400" : "text-white"}
-                    `}
-                >
-                    Contact Me
-                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-pink-400 transition-all duration-300 group-hover:w-full"></span>
-                </Link>       
+                {links.map((link) => {
+                    const isActive = pathname === link.path;
+                    return (
+                        <Link 
+                            key={link.path}
+                            href={link.path}
+                            className={`relative hover:text-pink-400 transition-colors duration-300 group 
+                                ${isActive ? "text-pink-400" : "text-white"}
+                            `}
+                        >
+                            {link.name}
+                            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-pink-400 transition-all duration-300 group-hover:w-full"></span>
+                        </Link>
+                    )
+                })}
             </nav>
             <div className="hidden md:flex gap-4">
                     <LanguageToggle />
@@ -98,48 +81,22 @@ const Header = () => {
                 isMenuOpen ? "translate-x-0 " : "translate-x-full"}`
             }>
 
-                <Link 
-                    href="/" 
-                    className={`relative hover:text-pink-400 transition-colors duration-300 group 
-                        ${pathname==="/" ? "text-pink-400" : "text-white"}
-                    `}
-                    onClick={() => setIsMenuOpen(false)}
-                    //secildikten sonra kapanması için
-                >
-                    Home
-                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-pink-400 transition-all duration-300 group-hover:w-full"></span>
-                </Link>
-                <Link 
-                    href="/about"
-                    className={`relative hover:text-pink-400 transition-colors duration-300 group 
-                        ${pathname==="/about" ? "text-pink-400" : "text-white"}
-                    `}
-                    onClick={() => setIsMenuOpen(false)}
-                    
-                >
-                    About Me
-                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-pink-400 transition-all duration-300 group-hover:w-full"></span>
-                </Link>
-                <Link 
-                    href="/project" 
-                    className={`relative hover:text-pink-400 transition-colors duration-300 group 
-                        ${pathname==="/project" ? "text-pink-400" : "text-white"}
-                    `}
-                    onClick={() => setIsMenuOpen(false)}
-                >
-                    Projects
-                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-pink-400 transition-all duration-300 group-hover:w-full"></span>
-                </Link>    
-                <Link 
-                    href="/contact" 
-                    className={`relative hover:text-pink-400 transition-colors duration-300 group 
-                        ${pathname==="/contact" ? "text-pink-400" : "text-white"}
-                    `}
-                    onClick={() => setIsMenuOpen(false)}
-                >
-                    Contact Me
-                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-pink-400 transition-all duration-300 group-hover:w-full"></span>
-                </Link>
+                {links.map((link) => {
+                    const isActive = pathname === link.path;
+                    return (
+                        <Link 
+                            key={`mobile-${link.path}`}
+                            href={link.path}
+                            className={`relative hover:text-pink-400 transition-colors duration-300 group 
+                                ${isActive ? "text-pink-600" : "text-pink-300"}
+                            `}
+                            onClick={() => setIsMenuOpen(false)}
+                        >
+                            {link.name}
+                            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-pink-400 transition-all duration-300 group-hover:w-full"></span>
+                        </Link>
+                    );
+                })}
                 <LanguageToggle />
                 <DarkMode />  
                 

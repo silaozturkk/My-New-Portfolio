@@ -1,0 +1,56 @@
+{
+    "title": "My Projects",
+    "description": "A collection of projects that reflect my focus on clean design, efficient development, and meaningful digital experiences. Each one represents a step forward in combining creativity with functionality.",
+    "buttonText": "View Details",
+    "backToProjects": "Back to Projects",
+    "projectNotFound": "Project Not Found",
+    "aboutProject": "About This Project",
+    "technologiesUsed": "Technologies Used",
+    "projectLinks": "Project Links",
+    "viewSourceCode": "View Source Code",
+    "viewLiveDemo": "View Live Demo",
+    "projects": [
+      {
+        "id": 1,
+        "title": "Ticket Sales System",
+        "image": "/biletSatisSistemi.png",
+        "description": "A desktop Java application that allows users to view theater performances, select seats, and purchase tickets. The system includes features such as seat tracking, ticket reservation, and user management. It offers a user-friendly interface providing a smooth, efficient ticket purchasing experience.",
+        "technologies": ["Java", "Desktop Application"],
+        "github": "https://github.com/silaozturkk/Tiyatro-Bilet-Sat-Sistemi",
+        "live": "",
+        "featured": true
+      },
+      {
+        "id": 2,
+        "title": "My Portfolio",
+        "image": "/my-portfolio.png",
+        "description": "A modern, responsive portfolio website built with Next.js and Tailwind CSS. The project showcases personal projects, skills, and contact information through a clean, user-friendly design. It focuses on performance, simplicity, and mobile responsiveness to create a professional digital identity.",
+        "technologies": ["Next.js", "React", "Tailwind CSS", "TypeScript"],
+        "github": "https://github.com/silaozturkk/My-New-Portfolio",
+        "live": "https://silaozturk.me",
+        "featured": true
+      },
+      {
+        "id": 3,
+        "title": "Google Docs Clone",
+        "image": "/Google Docs Clone.png",
+        "description": "A real-time document editing application built with Next.js, Tailwind CSS, and Convex database. Users can sign in to create, edit, and securely store their documents in the cloud. With its modern design and fast performance, it delivers a collaborative experience similar to Google Docs.",
+        "technologies": ["Next.js", "React", "Tailwind CSS", "Convex", "TypeScript"],
+        "github": "https://github.com/silaozturkk/google-docs-clone",
+        "live": "https://google-docs-clone-delta-puce.vercel.app",
+        "featured": true
+      },
+      {
+        "id": 4,
+        "title": "Course and Exam Schedule Planning System",
+        "image": "/derslikTakipSistemi.png",
+        "description": "A modern web application built with Node.js, React, and Tailwind CSS. Users can easily plan and manage course and exam schedules. The system detects conflicts and, with its user-friendly interface, efficiently streamlines the scheduling process.",
+        "technologies": ["Node.js", "React", "Tailwind CSS", "JavaScript"],
+        "github": "",
+        "live": "",
+        "featured": true
+      }
+    ]
+  }
+  
+  

@@ -1,0 +1,17 @@
+{
+  "greeting": "Merhaba, ben Sıla.",
+  "introPrefix": "Ben",
+  "titles": [
+    "Bilgisayar Mühendisliği Öğrencisi",
+    "Geleceğin Yazılım Mühendisi",
+    "Frontend Geliştirici"
+  ],
+  "description": "Şu anda 3. sınıf Bilgisayar Mühendisliği öğrencisiyim. Full stack web geliştirmeye odaklanıyorum. Okulda edindiğim teorik bilgileri gerçek dünya projelerinde uygulayarak pekiştiriyorum. Sürekli öğrenmeye tutkuyla bağlıyım ve bu dinamik alanda kendimi geliştirmeye devam ediyorum.",
+  "buttons": {
+    "resume": "Özgeçmiş",
+    "contact": "İletişim 🩷"
+  },
+  "stats": {
+    "daysICode": "Kodladığım Günler"
+  }
+}

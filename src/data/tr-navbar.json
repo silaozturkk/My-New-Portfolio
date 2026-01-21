@@ -1,0 +1,23 @@
+{
+    "logo": "Sıla Öztürk",
+    "links": [
+      {
+        "name": "Ana Sayfa",
+        "path": "/"
+      },
+      {
+        "name": "Hakkımda",
+        "path": "/about"
+      },
+      {
+        "name": "Projeler",
+        "path": "/project"
+      },
+      {
+        "name": "İletişim",
+        "path": "/contact"
+      }
+    ]
+  }
+  
+  

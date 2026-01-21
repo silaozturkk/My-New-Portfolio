@@ -1,12 +1,8 @@
 "use client";
-import { useState } from "react";
+import { useLanguage } from "@/context/LanguageContext";
 
 const LanguageToggle = () => {
-  const [lang, setLang] = useState<"EN" | "TR">("EN");
-
-  const toggleLang = () => {
-    setLang(lang === "EN" ? "TR" : "EN");
-  };
+  const { lang, toggleLang } = useLanguage();
 
   return (
     <button
@@ -16,14 +12,14 @@ const LanguageToggle = () => {
       {/* Sliding pink pill */}
       <span
         className={`absolute h-7 w-9 rounded-full bg-pink-500 transition-all duration-300 ${
-          lang === "EN" ? "translate-x-1" : "translate-x-10"
+          lang === "en" ? "translate-x-1" : "translate-x-10"
         }`}
       />
 
       {/* Text */}
       <span
         className={`z-10 w-10 text-center text-sm font-semibold transition ${
-          lang === "EN" ? "text-white" : "text-white/40"
+          lang === "en" ? "text-white" : "text-neutral-500"
         }`}
       >
         EN
@@ -31,7 +27,7 @@ const LanguageToggle = () => {
 
       <span
         className={`z-10 w-10 text-center text-sm font-semibold transition ${
-          lang === "TR" ? "text-white" : "text-white/40"
+          lang === "tr" ? "text-white" : "text-neutral-500"
         }`}
       >
         TR

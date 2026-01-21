@@ -1,0 +1,71 @@
+{
+    "title": "About Me",
+    "bio": {
+      "1":"I am a problem solver who enjoys turning ideas into meaningful digital experiences. In my development process, I focus not only on building functional solutions but also on creating user-centered, sustainable, and impactful products.",
+      "2": "I see every challenge as an opportunity to grow, innovate, and think more creatively. I enjoy working on projects that have real-world impact and always approach my work with curiosity, motivation, and a strong desire to learn."
+    },
+    "sections": {
+      "skills": {
+        "title": "Skills and Technologies",
+        "items": [
+          {
+            "name": "Java",
+            "percentage": 85
+          },
+          {
+            "name": "JavaScript",
+            "percentage": 90
+          },
+          {
+            "name": "HTML",
+            "percentage": 95
+          },
+          {
+            "name": "CSS",
+            "percentage": 85
+          },
+          {
+            "name": "React",
+            "percentage": 88
+          },
+          {
+            "name": "Next.js",
+            "percentage": 80
+          },
+          {
+            "name": "Tailwind CSS",
+            "percentage": 100
+          },
+          {
+            "name": "Python",
+            "percentage": 75
+          }
+        ]
+      },
+      "education": {
+        "title": "Education",
+        "items": [
+          {
+            "degree": "Computer Engineering",
+            "university": "İstanbul Rumeli University",
+            "period": "2023-2027",
+            "description": "I am a 3rd-year Computer Engineering student at İstanbul Rumeli University with a GPA of 3.62/4.00. During my studies, I have completed courses such as Object-Oriented Programming, Data Structures, Computer Architecture, Visual Programming, and Numerical Analysis. I develop personal and academic projects using Java, JavaScript, React and Next.js. I am particularly interested in software development, algorithms, and data analysis, and I am continuously working to improve myself in these areas."
+          }
+        ]
+      },
+      "experience": {
+        "title": "Experience",
+        "items": [
+          {
+            "position": "Software Developer Intern",
+            "company": "Beylikdüzü Municipality",
+            "period": "June 2025 – July 2025",
+            "department":"Directorate of Information Technologies",
+            "description": "Learned web development technologies including JavaScript, React, and Next.js during the internship. Developed a personal portfolio website using React, Next.js, and Tailwind CSS to showcase my projects and skills. Built a simple blog application where users can view and add posts, applying component-based architecture and basic state management. Gained hands-on experience in modern web development processes and project implementation."
+          }
+        ]
+      }
+    }
+  }
+  
+  

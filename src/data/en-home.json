@@ -1,0 +1,19 @@
+{
+    "greeting": "Hi, I'm Sıla.",
+    "introPrefix": "I am a",
+    "titles": [
+      "Computer Engineering Student",
+      "Future Software Engineer",
+      "Frontend Developer"
+    ],
+    "description": "I am currently a 3rd-year Computer Engineering student. I focus on full stack web development. I actively translate the theoretical knowledge I gain in school into practical applications by working on real-world projects. I am passionate about continuous learning and constantly improving my skills in this dynamic field.",
+    "buttons": {
+      "resume": "Resume",
+      "contact": "Contact 🩷"
+    },
+    "stats": {
+      "daysICode": "Days I Code"
+    }
+  }
+  
+  
