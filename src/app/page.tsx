@@ -1,6 +1,6 @@
 'use client'
 import DaysICode from "@/components/DaysICode";
-import { AiOutlineExport } from "react-icons/ai";
+import { AiOutlineDownload } from "react-icons/ai";
 import { Typewriter } from 'react-simple-typewriter'
 import Image from "next/image";
 import HireMe from "@/components/hireMe";
@@ -8,9 +8,13 @@ import { useLanguage } from "@/context/LanguageContext";
 
 
 export default function Home() {
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
   const home = t.home;
   const contactEmail = t.contact.email ?? "ozturksila100@gmail.com";
+  const cvHref =
+    lang === "en"
+      ? "/Sıla Öztürk English.cv.pdf"
+      : "/Sıla Öztürk Türkçe.cv.pdf";
   
   return (
     <div>
@@ -36,11 +40,12 @@ export default function Home() {
           <div className="flex gap-4 items-center lg:justify-start justify-center md:pb-0 pb-6">
           <div className="flex flex-row items-center gap-2 text-xl p-2 bg-pink-400 text-white rounded-md shadow-md hover:bg-pink-500 ">
             <a 
-              href="https://www.linkedin.com/in/sıla-öztürk1/"
+              href={cvHref}
+              download
             >
               {home.buttons.resume}
             </a>
-            <AiOutlineExport />
+            <AiOutlineDownload />
           </div>
           <a 
             href={`mailto:${contactEmail}`} 
